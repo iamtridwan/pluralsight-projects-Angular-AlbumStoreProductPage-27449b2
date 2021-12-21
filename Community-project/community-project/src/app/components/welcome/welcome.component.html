@@ -1,0 +1,106 @@
+<div class="banner-intro" [style.backgroundImage]="'url(' + bgContent + ')'">
+  <div class="slider-btn">
+    <div class="btn" (click)="setBg('prev')"><p>&#60;</p></div>
+    <div class="btn" (click)="setBg('next')"><p>&#62;</p></div>
+  </div>
+  <div class="intro-content">
+    <h1>
+      OFFERING
+      <span>Best Learning Skills</span>
+    </h1>
+    <div class="link-btn">
+      <button (click)="moveToLearners()">Get a sponsor</button>
+      <button (click)="moveToSponsors()">Be a sponsor</button>
+    </div>
+  </div>
+</div>
+
+<section class="features">
+  <div class="how">
+    <h3>How it Works</h3>
+    <div class="learners">
+      <h4>As a learner...</h4>
+      <p>
+        You register your intention of the course you intend to study which is
+        listed amongst the various course categories. The categories range from
+        Business, IT and Software to Design, Photography and Video as well as
+        Development course. Under each categories a available courses you can
+        seek sponsorship for. Getting preferred course of study, You fill a form
+        an submit.
+      </p>
+      <button routerLink="/learner">Get a sponsor now</button>
+    </div>
+    <div class="sponsor">
+      <h4>As a Sponsor...</h4>
+      <p>
+        You browse through our list of available students seeeking sponsorship
+        for particular course of study.
+        Each students has an email and a button that links directly to the course 
+        page the student intends to study which is on Udemy. There you can gift them the 
+        course registering them with their email.
+      </p>
+      <button routerLink="/sponsor">Be a sponsor</button>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h3>What learners are saying</h3>
+  <div class="card-group">
+    <!-- card start -->
+    <div class="test-card">
+      <div class="head">
+        <img src="../../../assets/img-01.jpg" alt="participant" />
+        <h4>Justine Joe</h4>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+          assumenda harum et ab deserunt doloremque ducimus porro a voluptatem
+          rerum.
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- card start -->
+    <div class="test-card">
+      <div class="head">
+        <img src="../../../assets/img-03.jpg" alt="participant" />
+        <h4>Amara Smith</h4>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+          assumenda harum et ab deserunt doloremque ducimus porro a voluptatem
+          rerum.
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+    <!-- card start -->
+    <div class="test-card">
+      <div class="head">
+        <img src="../../../assets/img-02.jpg" alt="participant" />
+        <h4>Jose Sanchez</h4>
+      </div>
+      <div class="body">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae
+          assumenda harum et ab deserunt doloremque ducimus porro a voluptatem
+          rerum.
+        </p>
+      </div>
+    </div>
+    <!-- card end -->
+  </div>
+</section>
+
+<div class="partner">
+  <h4>our patners</h4>
+  <div class="img">
+    <img src="../../../assets/google.png" alt="google logo" />
+    <img src="../../../assets/andela-logo-vector.svg" alt="andela logo" />
+    <img src="../../../assets/udemy-ar21.svg" alt="udemy logo" />
+    <img src="../../../assets/soft.png" alt="microsoft logo" />
+  </div>
+</div>

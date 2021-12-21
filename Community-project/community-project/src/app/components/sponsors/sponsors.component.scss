@@ -1,0 +1,100 @@
+// variable
+$tablet: 768px;
+
+@mixin tablet {
+  @media (min-width:#{$tablet}) {
+    @content;
+  }
+}
+
+// main
+main {
+  width: 90%;
+  margin: 0 auto;
+  color: rgb(44, 43, 43);
+
+  @include tablet() {
+    width: 60%;
+  }
+
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    color: rgb(56, 56, 56);
+  }
+  p {
+    text-align: left;
+    line-height: 35px;
+    margin: 0;
+  }
+
+  ul {
+    margin: 30px 0;
+    padding: 0;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid rgb(10, 112, 245);
+
+    li {
+      text-align: center;
+      border-bottom: 1px solid rgb(10, 112, 245);
+      padding: 10px 0;
+
+      @include tablet() {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      h4 {
+        margin: 0;
+       
+      }
+
+      p {
+        text-align: center;
+        @include tablet(){
+          text-align: left;
+        }
+      }
+      p:first-child {
+        @include tablet() {
+          text-align: left;
+          color: rgb(10, 112, 245);
+        }
+      }
+
+      span {
+        color: rgb(163, 55, 12);
+        @include tablet() {
+          display: none;
+        }
+      }
+
+      a {
+        background: rgb(10, 112, 245);
+        color: white;
+        font-weight: 500;
+        border-radius: 6px;
+        border: none;
+        padding: 8px 10px;
+        cursor: pointer;
+        text-decoration: none;
+        display:inline-block;
+        margin-top: 10px;
+
+        @include tablet(){
+          margin: 0;
+        
+        }
+      }
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+}

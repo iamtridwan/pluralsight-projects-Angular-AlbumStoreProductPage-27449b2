@@ -1,0 +1,24 @@
+<main>
+    <h1>Welcome Awesome Sponsor</h1>
+    <div class="top">
+        <h3>How it works</h3>
+        <p>Thanks for checking in.
+            Browse through the list of our available
+            students seeking sponsorship.
+            Detailed information about them is given.
+            clicking on the gift course button  will take to the platform
+            to gift them the course.
+        </p>
+    </div>
+    <!-- learners  -->
+    <ul>
+        <li *ngFor="let learner of learners">
+            <h4><span>Name:</span>{{learner.name}}</h4>
+            <p><span>Email:</span>  {{learner.email}}</p>
+            <a href = "https://udemy.com/course" target="_blank">Gift Course</a>
+        </li>
+    </ul>
+</main>
+
+
+

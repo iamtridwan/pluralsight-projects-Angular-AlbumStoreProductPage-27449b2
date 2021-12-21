@@ -1,0 +1,28 @@
+<nav>
+  <div class="logo">
+    <h4>LearnNow</h4>
+  </div>
+  <ul [style.height.px]="height ? 200 : 0">
+    <li><a routerLink="/welcome" (click) = "setNavHeight()">Home </a></li>
+    <li><a routerLink ="/learner" (click) = "setNavHeight()">Get a sponsor</a></li>
+    <li><a routerLink ="/sponsor" (click) = "setNavHeight()">Be a sponsor</a></li>
+  </ul>
+  <div class="hamburger" (click)="setNavHeight()">
+    <div class="dash"></div>
+    <div class="dash"></div>
+    <div class="dash"></div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="logo">
+    <h4>learnNow</h4>
+    <p>copyright &copy; <span>{{date}}</span> learnNow.</p> 
+  </div>
+  <ul>
+    <li><a routerLink="/welcome">Home</a></li>
+    <li><a routerLink ="/learner">Get a sponsor</a></li>
+    <li><a routerLink ="/sponsor">Be a sponsor</a></li>
+  </ul>
+</footer>
