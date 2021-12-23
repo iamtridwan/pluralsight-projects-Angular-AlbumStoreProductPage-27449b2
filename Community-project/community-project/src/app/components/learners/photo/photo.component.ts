@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/models/course';
+import { CoursesSevicesService } from 'src/app/core/courses-sevices.service';
 
 @Component({
   selector: 'cp-photo',
@@ -7,11 +8,15 @@ import { Course } from 'src/app/models/course';
   styleUrls: ['./photo.component.scss'],
 })
 export class PhotoComponent implements OnInit {
-  photo: Course[] = [];
-  photo_url =
-    '/api-2.0/courses/?page=2&category=Photography%20&%20Video&price=price-paid';
+  photo: any = [];
+  photo_url = '../assets/data/photo.json';
 
-  constructor() {}
+  constructor(private courseService: CoursesSevicesService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.courseService.getCourses(this.photo_url).subscribe(
+      (data: Course[]) => (this.photo = data),
+      (err) => console.log(err)
+    );
+  }
 }

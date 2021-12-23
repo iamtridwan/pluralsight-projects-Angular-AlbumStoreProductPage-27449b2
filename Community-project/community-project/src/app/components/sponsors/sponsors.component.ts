@@ -13,7 +13,8 @@ learners : Learner[] = []
   constructor(private courseService: CoursesSevicesService) { }
 
   ngOnInit(): void {
-    this.courseService.getRegisteredLearners().subscribe(
+    this.courseService.getRegisteredLearners()
+    .subscribe(
       res => this.learners = res,
       err => console.log(err)
     )

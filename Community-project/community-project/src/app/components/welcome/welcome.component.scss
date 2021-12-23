@@ -28,7 +28,6 @@ $tablet: 768px;
     justify-content: space-between;
     padding: 0 10px;
     z-index: 1;
-
     @include tablet() {
       padding: 0 30px;
     }
@@ -41,7 +40,6 @@ $tablet: 768px;
       display: flex;
       align-items: center;
       justify-content: center;
-
       @include tablet() {
         width: 50px;
         height: 50px;
@@ -50,7 +48,6 @@ $tablet: 768px;
       p {
         font-size: 26px;
         cursor: pointer;
-
         @include tablet() {
           font-size: 36px;
         }
@@ -63,8 +60,6 @@ $tablet: 768px;
     color: white;
     margin: 0 auto;
     transform: translateY(50px);
-
-    // media query
     @include tablet() {
       transform: translateY(150px);
     }
@@ -93,7 +88,6 @@ $tablet: 768px;
     .link-btn {
       width: 65%;
       margin: 20px auto;
-      // media query
       @include tablet() {
         display: flex;
         align-items: center;
@@ -136,20 +130,7 @@ $tablet: 768px;
     position: relative;
   }
 
-  h3::after {
-    content: "";
-    width: 30%;
-    left: 10vw;
-    bottom: 0px;
-    position: absolute;
-    height: 5px;
-    background-color: rgb(10, 112, 245);
 
-    @include tablet() {
-      width: 20%;
-      left: 20vw;
-    }
-  }
   .learners {
     h4 {
       color: rgb(77, 75, 75);
@@ -200,8 +181,6 @@ $tablet: 768px;
       border: 6px;
       padding: 10px 15px;
       font-size: 18px;
-      text-transform: capitalize;
-      cursor: pointer;
       border-radius: 8px;
 
       @include tablet() {
@@ -273,15 +252,13 @@ $tablet: 768px;
 .partner {
   width: 90%;
   margin: 30px auto;
-
   @include tablet() {
     width: 70%;
   }
   h4 {
     text-align: center;
     color: rgb(10, 112, 245);
-    text-transform: uppercase;
-    font-weight: 500;
+   
   }
   .img {
     width: 100%;
@@ -291,14 +268,9 @@ $tablet: 768px;
     justify-content: space-between;
 
     img {
-      width: 20%;
-      height: 20%;
-      margin: auto;
-
-      @include tablet() {
-        width: 10%;
-        height: 10%;
-      }
+        width: 20%;
+        height: 20%;
+      
     }
   }
 }

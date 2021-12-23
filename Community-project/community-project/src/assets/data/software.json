@@ -1,0 +1,22 @@
+[
+  {
+    "title": "A Practical Introduction to Cloud Computing",
+    "url": "/course/introduction-cloud-computing/",
+    "image": "https://img-c.udemycdn.com/course/125_H/1122334_3363_4.jpg"
+  },
+  {
+    "title": "Programming 101",
+    "url": "/course/programming-101/",
+    "image": "https://img-b.udemycdn.com/course/125_H/956404_da00.jpg"
+  },
+  {
+    "title": "Amazon Web Services (AWS) - Zero to Hero",
+    "url": "/course/amazon-web-services-aws-v/",
+    "image": "https://img-b.udemycdn.com/course/125_H/1331946_ed41_4.jpg"
+  },
+  {
+    "title": "Introduction to Databases and SQL Querying",
+    "url": "/course/introduction-to-databases-and-sql-querying/",
+    "image": "https://img-c.udemycdn.com/course/125_H/552672_e2b6_5.jpg"
+  }
+]

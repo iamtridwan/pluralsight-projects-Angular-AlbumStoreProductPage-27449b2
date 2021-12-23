@@ -8,12 +8,16 @@ import { Course } from 'src/app/models/course';
   styleUrls: ['./design.component.scss'],
 })
 export class DesignComponent implements OnInit {
-  designList: Course[] = [];
-  design_url = '/api-2.0/courses/?page=2&category=Design&price=price-paid';
+  designList: any = [];
+  design_url = '../assets/data/design.json'
   
   constructor(private courseService: CoursesSevicesService) {}
 
   ngOnInit(): void {
-    this.courseService.getCourses(this.design_url);
+    this.courseService.getCourses(this.design_url)
+    .subscribe(
+      (res: Course[]) => this.designList = res,
+      err => console.log(err) 
+    );
   }
 }

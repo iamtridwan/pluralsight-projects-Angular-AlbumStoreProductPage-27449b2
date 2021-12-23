@@ -22,22 +22,27 @@ main {
   h1 {
     color: red;
     text-align: center;
+    margin: 0;
   }
   h3 {
     text-align: center;
     color: rgb(56, 56, 56);
+    margin: 0;
   }
 
   ul {
+  
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid rgb(10, 112, 245);
+    margin: 0;
 
     @include tablet() {
       flex-direction: row;
+      align-items: center;
     }
 
     li {
@@ -96,5 +101,9 @@ main {
         margin: 20px 0;
       }
     }
+  }
+  .course-cat{
+    width:100%;
+    margin: 20px 0;
   }
 }

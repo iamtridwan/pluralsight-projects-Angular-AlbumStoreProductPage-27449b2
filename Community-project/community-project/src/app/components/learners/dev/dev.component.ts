@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/models/course';
+import { CoursesSevicesService } from 'src/app/core/courses-sevices.service';
 
 @Component({
   selector: 'cp-dev',
@@ -7,10 +8,15 @@ import { Course } from 'src/app/models/course';
   styleUrls: ['./dev.component.scss'],
 })
 export class DevComponent implements OnInit {
-  devList: Course[] = [];
-  dev_url = 'api-2.0/courses/?page=2&category=Development&price=price-paid';
+  devList: any = [];
+  dev_url = '../assets/data/dev.json';
 
-  constructor() {}
+  constructor(private courseService: CoursesSevicesService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.courseService.getCourses(this.dev_url)
+    .subscribe(
+      (res: Course[]) => this.devList = res
+    )
+  }
 }

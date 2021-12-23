@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Web Design for Web Developers: Build Beautiful Websites!",
+    "url": "/course/web-design-secrets/",
+    "image": "https://img-b.udemycdn.com/course/125_H/473160_d929_3.jpg"
+  },
+  {
+    "title": "Introduction To Python Programming",
+    "url": "/course/pythonforbeginnersintro/",
+    "image": "https://img-c.udemycdn.com/course/125_H/433798_1de9_4.jpg"
+  },
+  {
+    "title": "Java Tutorial for Complete Beginners",
+    "url": "/course/java-tutorial/",
+    "image": "https://img-b.udemycdn.com/course/125_H/24823_963e_14.jpg"
+  },
+  {
+    "title": "Deep Learning Prerequisites: The Numpy Stack in Python V2",
+    "url": "/course/numpy-python/",
+   "image": "https://img-c.udemycdn.com/course/125_H/3060786_438f_2.jpg"
+  }
+]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/models/course';
+import { CoursesSevicesService } from 'src/app/core/courses-sevices.service';
 
 @Component({
   selector: 'cp-software',
@@ -7,10 +8,16 @@ import { Course } from 'src/app/models/course';
   styleUrls: ['./software.component.scss'],
 })
 export class SoftwareComponent implements OnInit {
-  softList: Course[] = [];
+  softList:any = [];
   software_url =
-    'api-2.0/courses/?page=2&category=IT%20&%20Software&price=price-paid';
-  constructor() {}
+    '../assets/data/software.json';
+  constructor(private courseService: CoursesSevicesService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.courseService.getCourses(this.software_url)
+    .subscribe(
+      (data: Course[]) => this.softList = data,
+      err => console.log(err)
+    )
+  }
 }

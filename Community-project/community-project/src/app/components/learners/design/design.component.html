@@ -1,20 +1,22 @@
 <ul class="card-list">
-  <li class="card">
-    <img src="../../../../assets/img-02.jpg" alt="course image" />
-    <div class="body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <li class="card" *ngFor="let list of designList">
+    <div class="img">
+      <div class="img">
+        <img [src]="list.image" alt="course image" />
+      </div>
     </div>
-  </li>
-  <li class="card">
-    <img src="../../../../assets/img-02.jpg" alt="course image" />
+
     <div class="body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+     <div class="body">
+        <div class="title">
+        <h5>Title</h5>
+        <p>{{list.title}}</p>
+        </div>
+        <div class="desc">
+            <h5>Url:</h5>
+            <p>{{list.url}}</p>
+        </div>
     </div>
-  </li>
-  <li class="card">
-    <img src="../../../../assets/img-02.jpg" alt="course image" />
-    <div class="body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
   </li>
 </ul>
