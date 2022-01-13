@@ -1,0 +1,17 @@
+{
+  "name": "getting-started-with-mongo",
+  "version": "1.0.0",
+  "description": "learning how to use mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "database",
+    "express",
+    "nodejs"
+  ],
+  "author": "Tridwan",
+  "license": "ISC"
+}
